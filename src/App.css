@@ -1,0 +1,184 @@
+/* Settings for the main panel with the images */
+.main-column {
+  width: 100%;
+
+  background-color: rgba(16, 16, 43, 0.753);
+
+  align-items: center;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.Shopping {
+  /* margin-top: 600px; */
+  margin-left: 2em;
+  padding: 5%;
+}
+
+@media only screen and (min-width: 1680px) and (max-width: 1840px) {
+  .main-column {
+    grid-template-columns: repeat(4, 310px);
+    grid-template-rows: 177px 177px 177px;
+  }
+
+  .thumb {
+    width: 310px;
+    height: 177px;
+    object-fit: cover;
+  }
+
+  .large-Images {
+    width: 1008px;
+    height: 567px;
+    object-fit: cover;
+  }
+
+  .image-caption {
+    top: 50%;
+    left: 45%;
+    /* right: 50%; */
+  }
+
+  .imgSel {
+    width: 150px;
+    height: 72px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1679px) {
+  .main-column {
+    grid-template-columns: repeat(4, 260px);
+    grid-template-rows: 149px 149px 149px;
+  }
+
+  .thumb {
+    width: 260px;
+    height: 149px;
+    object-fit: cover;
+  }
+
+  .large-Images {
+    width: 820px;
+    height: 461px;
+    object-fit: cover;
+  }
+
+  .image-caption {
+    top: 50%;
+    left: 42.5%;
+  }
+
+  .imgSel {
+    width: 150px;
+    height: 72px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+  .main-column {
+    grid-template-columns: repeat(4, 240px);
+    grid-template-rows: 137px 137px 137px;
+  }
+
+  .thumb {
+    width: 240px;
+    height: 137px;
+    object-fit: cover;
+  }
+
+  .fgcap {
+    width: 240px;
+  }
+
+  .large-Images {
+    width: 749px;
+    height: 422px;
+    object-fit: cover;
+  }
+
+  .image-caption {
+    top: 50%;
+    left: 42.5%;
+  }
+
+  .imgSel {
+    width: 120px;
+    height: 58px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .main-column {
+    grid-template-columns: repeat(4, 185px);
+    grid-template-rows: 106px 106px 106px;
+  }
+
+  .thumb {
+    width: 185px;
+    height: 106px;
+    object-fit: cover;
+  }
+
+  .fgcap {
+    width: 185px;
+  }
+
+  .large-Images {
+    width: 614px;
+    height: 461px;
+    object-fit: cover;
+  }
+
+  .image-caption {
+    top: 50%;
+    left: 42.5%;
+  }
+
+  .imgSel {
+    width: 100px;
+    height: 48px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-column {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(6, 143px);
+  }
+
+  .thumb {
+    width: 250px;
+    height: 143px;
+    object-fit: cover;
+  }
+
+  .fgcap {
+    width: 250px;
+  }
+
+  .large-Images {
+    width: 461px;
+    height: 258px;
+    object-fit: cover;
+  }
+
+  .image-caption {
+    top: 17.5%;
+    left: 37.5%;
+  }
+
+  .imgSel {
+    width: 70px;
+    height: 34px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
