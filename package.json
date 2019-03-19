@@ -2,15 +2,13 @@
   "name": "Phone-Shop",
   "version": "1.0.0",
   "private": true,
-  "proxy": "https://localhost:1024",
-  "/auth/google": {
-    "target": "https://localhost:1024"
-  },
+  "homepage": "https://jolumtavares.github.io/Phone-Shop/",
   "dependencies": {
     "axios": "^0.18.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "express-fileupload": "^1.0.0",
+    "gh-pages": "^2.0.1",
     "randomstring": "^1.1.5",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
@@ -24,10 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start-server": "node server.js",
-    "start-server-mon": "nodemon server.js",
-    "client": "npm start"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
